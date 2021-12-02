@@ -12,8 +12,8 @@ fn main() {
         .collect();
 
     match day {
-        1 => day1::solve(input),
-        2 => day2::solve(input),
+        1 => day1::solve(&input),
+        2 => day2::solve(&input),
         _ => todo!(),
     }
 }
