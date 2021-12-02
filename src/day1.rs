@@ -1,4 +1,4 @@
-pub fn solve(input: Vec<String>) {
+pub(crate) fn solve(input: Vec<String>) {
     let nums: Vec<u32> = input.iter().map(|x| x.parse().unwrap()).collect();
 
     let result = nums
