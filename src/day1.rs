@@ -12,7 +12,7 @@ pub(crate) fn solve(input: &[String]) {
     let result = nums
         .windows(3)
         .zip(nums[1..].windows(3))
-        .filter(|(a, b)| a.iter().fold(0, |a, b| a + b) < b.iter().fold(0, |a, b| a + b))
+        .filter(|(a, b)| a.iter().sum::<u32>() < b.iter().sum())
         .count();
 
     println!("Part 2: {}", result);
